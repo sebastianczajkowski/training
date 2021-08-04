@@ -35,9 +35,9 @@ class EmployeeTest {
 	void testSalaryMinFailure() {
 		Employee e = new Employee(15, "Henry Banana");
 		assertThrows(IllegalArgumentException.class, () -> {
-			e.setSalary(10500);
+			e.setSalary(6999);
 		});
-		assertNotEquals(10500, e.getSalary());
+		assertNotEquals(6999, e.getSalary());
 	}
 
 	@Test
